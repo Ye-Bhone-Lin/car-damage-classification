@@ -3,6 +3,5 @@ opencv-python
 numpy
 tensorflow
 matplotlib
-os
 io
 time
