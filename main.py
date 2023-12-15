@@ -7,6 +7,8 @@ import cv2
 import streamlit as st
 from io import BytesIO
 import time
+import logging
+logging.basicConfig(level=logging.DEBUG)
 load_model = tf.keras.models.load_model('custom_model')
 load_model2 = tf.keras.models.load_model('mobilenetv2_model')
 uploaded_file = st.file_uploader('Choose a car image', type=["jpg", "png", "jpeg"])
